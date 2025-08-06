@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Juxtapose Slider - No Logo</title>
+  <link rel="stylesheet" href="juxtapose.css" />
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="juxtapose" style="width: 1980px; height: 1262px;"></div>
+
+  <script src="juxtapose.min.js"></script>
+  <script>
+    new juxtapose.JXSlider('#juxtapose',
+      [
+        {
+          src: 'https://cdn.knightlab.com/libs/juxtapose/latest/embed/media/010ecbb6-72ff-11f0-bb24-0936e1cb08fb/before.jpg',
+          label: 'Before'
+        },
+        {
+          src: 'https://cdn.knightlab.com/libs/juxtapose/latest/embed/media/010ecbb6-72ff-11f0-bb24-0936e1cb08fb/after.jpg',
+          label: 'After'
+        }
+      ],
+      {
+        animate: true,
+        showLabels: true,
+        showCredits: false,
+        makeResponsive: false
+      }
+    );
+  </script>
+
+</body>
+</html>
